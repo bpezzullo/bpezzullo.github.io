@@ -1,83 +1,188 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <title>Bill's Bio</title>
 
   <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
+    body,
+    html {
+      height: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
 
     .dataframe {
-      background-color:lightgrey;
+      /* background-color:lightgrey; */
       font-size: 20px;
       size: 40px;
       margin-top: 50px;
     }
-    .mtitle {
-      background-color:whitesmoke;
-      width: 45%;
-      text-align: center;
+
+    .bg {
+      background-image: url('analytics-1907993__340.jpg');
+
+      /* Half height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
+
+    .mtitle {
+
+      width: 100%;
+      text-align: center;
+      font-family: sans-serif;
+      font-style: italic;
+      font-size: 80px;
+    }
+
+
+    a:link {
+      color: #ccc;
+    }
+
+    /* visited link */
+    a:visited {
+      color: #043655;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: #8ebf42;
+    }
+
+    /* selected link */
+    a:active {
+      color: #800000;
+    }
+
     .mabout {
       font-size: 20px;
     }
-</style> 
+
+    .p {
+      padding-left: 5px;
+    }
+
+    .rgba-gradient {
+      background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+      background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+      background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+      background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+      background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    }
+  </style>
 </head>
 
 <body>
-<hr>
-<h1 class="mtitle">Bill Pezzullo</h1>
-<hr>
-
   <!-- Our rows function in containers (grid created). -->
-  <div class="container dataframe">
+  <div class="container rgba-gradient">
+    <hr>
+    <h1 class="bg mtitle">
+      Bill Pezzullo
+    </h1>
+    <hr>
 
-    <div class="row dataframe">
-      <br>
-      Software engineer with 20+ years of experience in leading and managing software applications 
-      from embedded realtime telecommunication systems to Cloud based web portals providing reporting and Analytics 
-      to the Healthcare industry.  Recently went back to school to refresh my development skills as I am looking to
-      move back into a individual contributor role.
-      <br>
 
+
+    <div class="row dataframe ">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <br>
+        <u><strong>Goals</strong>:</u> Software engineer with 20+ years of experience in leading and managing software
+        applications
+        from embedded realtime telecommunication systems to Cloud based web portals providing reporting and Analytics
+        to the Healthcare industry. Recently went back to school to refresh my development skills as I am looking to
+        move back into a individual contributor role.
+        <br>
+
+      </div>
     </div>
 
     <div class="row dataframe">
-      <br>
-      <u>Links</u>
-      <br> <p>   </p>
-      <ul>
-      <li><a href="https://www.linkedin.com/in/billpezzullo"> Linkedin </a></li>
-      <li><a href="https://patents.google.com/patent/US5263084A/en">Call Waiting ID Patent</a></li>
-      <li><a href="https://patents.google.com/patent/US6064732A/">ADSI - Screen Based telephone set ofr interactive enhanced telephony service Patent</a></li>
-
-      </ul>
-    </div>
-
-    <div class="row dataframe">
-
-      <u>Github projects</u>
-      <br> <p>   </p>
-      <ul>
-      <li><a href="https://bpezzullo.github.io/Plotly-challenge/">Belly Button analysis</a></li>
-      <li><a href="https://github.com/bpezzullo/python-api-challenge">Where to vacation using APIs and python</a></li>
-      <li><a href="https://bpezzullo.github.io/D3-challenge/">D3-challenge</a></li>
-      <li><a href="https://github.com/bpezzullo/python-challenge">Python challenge</a></li>
-      <li><a href="https://github.com/bpezzullo/web-scraping-challenge">Mars web scraping project</a></li>
-      <li><a href="https://github.com/bpezzullo/matplotlib-challenge/"> Plotting exercise </a></li>
-      <li><a href="https://bpezzullo.github.io/javascript-challenge/">UFO sitings with Javascript</a></li>
-      <li><a href="https://bpezzullo.github.io/Class_projects/">Spotify analysis</a></li>
-      <li><a href="https://quiet-peak-17157.herokuapp.com/">NC Census project</a></li>
-      </ul>
-      
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <br>
+        <u><strong>Links</strong></u>
+        <br>
+        <p> </p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/billpezzullo"> Check me out on Linkedin </a></li>
+        </ul>
+      </div>
     </div>
     <div class="row dataframe">
-      <br>
-      <u>Personal</u>
-      Swam in high school and through college. My favorite stroke is butterfly.  I am lucky to be a father of 3 grown girls, and spend time spoiling them.  I love to 
-       do home renovation projects, including converting a deck to a sunroom, building screen in decks, installing fireplaces and water features.
-      <br>
-    </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
 
+        <u><strong>Interactive Projects</strong></u>
+        <br>
+        <p> Check out some interactive applications I built.
+        </p>
+        <ul>
+          <li><a href="https://quiet-peak-17157.herokuapp.com/">NC Census project</a></li>
+          <li><a href="https://bpezzullo.github.io/Plotly-challenge/">Belly Button analysis</a></li>
+          <li><a href="https://bpezzullo.github.io/D3-challenge/">D3-challenge</a></li>
+        </ul>
+      </div>
+      <!-- </div>
+      <div class="row dataframe"> -->
+      <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-5">
+        <u><strong>Other Github Repositories</strong></u>
+        <p> Additinal Github Repositories.</p>
+        <ul>
+          <li><a href="https://bpezzullo.github.io/Class_projects/">Spotify analysis</a></li>
+          <li><a href="https://github.com/bpezzullo/python-api-challenge">Where to vacation using APIs and python</a>
+          </li>
+          <li><a href="https://github.com/bpezzullo/web-scraping-challenge">Mars web scraping project</a></li>
+          <li><a href="https://bpezzullo.github.io/javascript-challenge/">UFO sightings with Javascript</a></li>
+          <li><a href="https://github.com/bpezzullo/python-challenge">Python challenge</a></li>
+          <li><a href="https://github.com/bpezzullo/matplotlib-challenge/"> Plotting exercise </a></li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="row dataframe">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <br>
+        <u><strong>Patents</strong></u>
+        <br>
+        <p> I have been lucky to be associated with a couple of patents used (or use to be used) in
+          by a large portion of telephone users. In addition, I have defined and developed landline features
+          such as *69 and calling name and number.
+        </p>
+        <ul>
+          <li><a href="https://patents.google.com/patent/US5263084A/en">Call Waiting ID Patent</a></li>
+          <li><a href="https://patents.google.com/patent/US6064732A/">ADSI - Screen Based telephone set ofr
+              interactive
+              enhanced telephony service Patent</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row dataframe">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <br>
+        <u><strong>Personal</strong></u>
+        <br>
+        Swam in high school and through college. My favorite stroke is butterfly. I am lucky to be a father of 3 grown
+        girls, and spend time spoiling them. I love to
+        do home renovation projects, including converting a deck to a sunroom, building screen in decks, installing
+        fireplaces and water features. (pictures coming soon)
+        <br>
+      </div>
+    </div>
   </div>
+</body>
